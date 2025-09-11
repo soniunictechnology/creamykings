@@ -83,7 +83,7 @@ body {
 
 h1 {
     font-size: 90px;
-    line-height: 108px;
+    line-height: 91px;
     font-weight: 400;
     font-family: "Berkshire Swash", serif;
 }
@@ -518,7 +518,7 @@ html {
     bottom: 85px;
 }
 
-.banner-con .banner-image::before {
+/* .banner-con .banner-image::before {
     content: "";
     width: 728px;
     height: 728px;
@@ -528,7 +528,7 @@ html {
     position: absolute;
     background-image: linear-gradient(to bottom, var(--e-global-color-white) 10%, transparent);
     z-index: -1;
-}
+} */
 
 /* .walkingboy img {
     position: absolute;
@@ -563,6 +563,122 @@ html {
     transition: transform 0.3s ease;
     /* smooth flipping */
     z-index: 999;
+}
+
+.contact-fixed-btn {
+    position: relative;
+    z-index: 9;
+}
+
+.sticky-icon {
+    z-index: 1;
+    position: fixed;
+    top: 50%;
+    right: 0%;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sticky-icon a {
+    transform: translate(160px, 0px);
+    border-radius: 50px 0px 0px 50px;
+    text-align: left;
+    margin: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 19px;
+    font-family: 'Oswald', sans-serif;
+    transition: all 0.8s;
+}
+
+.sticky-icon a:hover {
+    color: #FFF;
+    transform: translate(0px, 0px);
+}
+
+.sticky-icon a:hover i {
+    transform: rotate(360deg);
+}
+
+/*.search_icon a:hover i  {
+	transform:rotate(360deg);}*/
+.contact {
+    background-color: #FD1D1D;
+    color: #FFF;
+}
+
+.sticky-icon a i {
+    background-color: #FFF;
+    height: 40px;
+    width: 40px;
+    color: #000;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+    transition: all 0.5s;
+}
+
+.sticky-icon a i.fa-instagram {
+    background-color: #FFF;
+    color: #FD1D1D;
+}
+
+#myBtn {
+    height: 50px;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    text-align: center;
+    padding: 10px;
+    text-align: center;
+    line-height: 40px;
+    border: none;
+    outline: none;
+    background-color: #1e88e5;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.fa-arrow-circle-up {
+    font-size: 30px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+.whatsapp {
+    background-color: #29A71A;
+    color: #FFF;
+}
+
+a.whatsapp i {
+    color: #29A71A;
+}
+
+.contact {
+    background-color: #ff2f2f;
+}
+
+.contact i {
+    color: #ff2f2f !important;
+}
+
+@media screen and (max-width: 767px) {
+    .sticky-icon a:hover {
+        transform: translate(160px, 0px);
+    }
+
+    #wpcf7-f10-p2375-o1 {
+        position: relative;
+        z-index: 99;
+    }
 }
 
 /* Relive */
@@ -4803,8 +4919,8 @@ html {
 }
 
 /* Preloader -------------------------------------------------------*/
-.limited-con .limited_content .all_button{
-        background: var(--e-global-color-dark-moderate-violets);
+.limited-con .limited_content .all_button {
+    background: var(--e-global-color-dark-moderate-violets);
 }
 
 /* Contact Form Messages -------------------------------------------------------*/
@@ -4847,6 +4963,7 @@ html {
         transform: translateY(-20px);
         opacity: 0;
     }
+
     to {
         transform: translateY(0);
         opacity: 1;
