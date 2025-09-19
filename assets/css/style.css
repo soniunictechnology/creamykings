@@ -89,7 +89,7 @@ h1 {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 60px;
     line-height: 64px;
     font-weight: 400;
     color: var(--e-global-color-secondary);
@@ -518,6 +518,10 @@ html {
     bottom: 85px;
 }
 
+.banner-con .banner-image img {
+    max-width: 90%;
+}
+
 /* .banner-con .banner-image::before {
     content: "";
     width: 728px;
@@ -789,10 +793,19 @@ a.whatsapp i {
     left: 0;
 }
 
+.classic-con .classic-leftimage img {
+    max-width: 90%;
+}
+
+
 .classic-con .classic-rightimage {
     position: absolute;
     bottom: 90px;
     right: 0;
+}
+
+.classic-con .classic-leftimage img {
+    max-width: 90%;
 }
 
 .classic-con .classic_content h2 {
@@ -852,6 +865,7 @@ a.whatsapp i {
 
 .classic-con .classic-box .classic_image_box figure img {
     transition: all 0.3s ease-in-out;
+    border-radius: 10px;
 }
 
 .classic-con .classic-box:hover .classic_image_box figure img {
@@ -1007,6 +1021,7 @@ a.whatsapp i {
 .categories-con .categories-box .image img {
     transition: all 0.3s ease-in-out;
     width: 368px;
+
 
 }
 
@@ -4989,4 +5004,17 @@ a.whatsapp i {
 .form_style:focus {
     border-color: var(--e-global-color-accent);
     box-shadow: 0 0 0 0.2rem rgba(255, 47, 47, 0.25);
+}
+
+.default-sorting-con .shop-products-con {
+    row-gap: 15px;
+}
+
+.default-sorting-con .popular-box .popular-image {
+    line-height: inherit;
+}
+
+.popular-con .popular-box:hover .popular-image img {
+    transform: translateY(0px);
+    scale: 1.1;
 }
