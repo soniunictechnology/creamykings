@@ -195,7 +195,7 @@ html {
 }
 
 .header .logo img {
-    width: 306px;
+    width: 250px;
 }
 
 .navbar-collapse .navbar-nav {
@@ -459,7 +459,7 @@ html {
 }
 
 .banner-con .banner-lefttopimage img {
-    opacity: 10%;
+    opacity: 70%;
 }
 
 .banner-con .banner_content {
@@ -1827,7 +1827,7 @@ a.whatsapp i {
 }
 
 .footer-con .footer-image img {
-    opacity: 10%;
+    opacity: 41%;
 }
 
 .footer-con .middle_portion {
